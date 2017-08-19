@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Age';
+    src: url('resources/Age (2).otf') format('opentype');
+    font-weight:100;
+    font-style:normal;
+}
+
+body{
+    background-color:#2E2E34;
+}
+
+.header{
+    height:80px;
+    background-color:#FFF;
+    margin-top:-15px;
+    width:110%;
+    margin-left:-10px;
+    text-align:center;
+}
+
+.header img{
+    margin-top:20px;
+    width:55px;
+    height:55px;
+}
+
+.header ul{
+    list-style:none;
+    margin-left:-20px;
+    color:#12121b;
+    display:flex;
+}
+
+.header ul .textLinks li{
+     display:inline-table;
+     font-family:Age;
+     width:60px;
+     font-size:20px;
+     height:-20px;
+     padding: 22px 10px 22px 10px;
+     border-radius:5px 5px;
+ }
+ 
+hovering{
+    background-color:blue;
+}
+
