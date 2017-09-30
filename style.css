@@ -1,47 +1,92 @@
 @font-face {
     font-family: 'Age';
-    src: url('resources/Age (2).otf') format('opentype');
+    src: url('resources/Age.otf') format('opentype');
     font-weight:100;
     font-style:normal;
 }
 
+.gray-bg{
+    background-color: #f3f3f4;
+}
+
+html, body{
+    height: 100%;
+}
+
 body{
-    background-color:#2E2E34;
+    font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #2f4050;
+    font-size: 13px;
+    color: #676a6c;
+    overflow-x: hidden;
 }
 
-.header{
-    height:80px;
-    background-color:#FFF;
-    margin-top:-15px;
-    width:110%;
-    margin-left:-10px;
-    text-align:center;
+h1{
+    font-size:30px;
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    display: block;
+    font-weight: bold;
 }
 
-.header img{
-    margin-top:20px;
-    width:55px;
-    height:55px;
+h3{
+    font-size:30px;
 }
 
-.header ul{
-    list-style:none;
-    margin-left:-20px;
-    color:#12121b;
-    display:flex;
+.logo_name{
+    color: #e6e6e6;
+    font-size: 180px;
+    font-weight: 800;
+    letter-spacing: -10px;
+    margin-bottom: 0;
 }
 
-.header ul .textLinks li{
-     display:inline-table;
-     font-family:Age;
-     width:60px;
-     font-size:20px;
-     height:-20px;
-     padding: 22px 10px 22px 10px;
-     border-radius:5px 5px;
- }
- 
-hovering{
-    background-color:blue;
+.form-control{
+    background-color: #FFFFFF;
+    border: 1px solid #e5e6e7;
+    border-radius: 1px;
+    color: inherit;
+    display: block;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+    font-size: 20px;
 }
 
+.form-group{
+    margin-top: 20px;
+    width:300px;
+    display:inline-block;
+}
+
+.m-b {
+    margin-bottom: 15px;
+}
+
+.btn-danger {
+    width:100%;
+    background-color: #ed5565;
+    border-color: #ed5565;
+    color: #FFFFFF;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
