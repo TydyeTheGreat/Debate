@@ -30,6 +30,9 @@ h1{
 
 h3{
     font-size:30px;
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    display: block;
+    font-weight: bold;
 }
 
 .logo_name{
