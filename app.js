@@ -25,9 +25,10 @@ $(".signin").on("click", function(){
     var password = document.getElementById("password").value;
     console.log(email, password);
     firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error){
-         console.log("error");
+         //console.log("error");
          document.location = "https://preview.c9users.io/tydyethegreat/signup/index.html?_c9_id=livepreview0&_c9_host=https://ide.c9.io";
-        
+    }).then(function(user){
+         console.log("h");
     });
         
 });
