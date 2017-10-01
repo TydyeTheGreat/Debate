@@ -29,5 +29,11 @@ $(".signin").on("click", function(){
          document.location = "https://preview.c9users.io/tydyethegreat/signup/index.html?_c9_id=livepreview0&_c9_host=https://ide.c9.io";
     }).then(function(user){
          console.log("next");
+         $("h3").fadeOut("medium");
+         $("p").fadeOut("medium");
+         $("p2").fadeOut("medium");
+         $(".emailbox").fadeOut("medium");
+         $(".passwordbox").fadeOut("medium");
+         $(".signin").fadeOut("medium");
     });
 });
