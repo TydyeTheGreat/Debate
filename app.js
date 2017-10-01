@@ -13,7 +13,6 @@ var auth = firebase.auth();
 $(document).on("ready", function(){
    console.log("ready"); 
    $("h4").hide();
-   $(".navbar").hide();
 });
 
 $(".register").on("click", function(){
@@ -38,6 +37,5 @@ $(".signin").on("click", function(){
          $(".passwordbox").fadeOut("medium");
          $(".signin").fadeOut("medium");
          $("h4").fadeIn("medium");
-         $(".navbar").fadeIn("medium");
     });
 });
