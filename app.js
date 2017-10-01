@@ -12,8 +12,9 @@ var auth = firebase.auth();
 
 $(document).on("ready", function(){
    console.log("ready"); 
+   $("h4").hide();
+   $(".navbar").hide();
 });
-
 
 $(".register").on("click", function(){
     console.log("hit/clicked");
@@ -29,11 +30,14 @@ $(".signin").on("click", function(){
          document.location = "https://preview.c9users.io/tydyethegreat/signup/index.html?_c9_id=livepreview0&_c9_host=https://ide.c9.io";
     }).then(function(user){
          console.log("next");
+         $("h1").fadeOut("medium");
          $("h3").fadeOut("medium");
          $("p").fadeOut("medium");
          $("p2").fadeOut("medium");
          $(".emailbox").fadeOut("medium");
          $(".passwordbox").fadeOut("medium");
          $(".signin").fadeOut("medium");
+         $("h4").fadeIn("medium");
+         $(".navbar").fadeIn("medium");
     });
 });

@@ -13,12 +13,57 @@ html, body{
     height: 100%;
 }
 
+ul{
+    list-style-type: none;
+    margin: 20px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: white;
+    font-family:"open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight:bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active){
+    background-color: #111;
+}
+
+.active{
+    background-color: #4CAF50;
+}
+
+.page-header { border-bottom:none; }
+
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 body{
-    font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #2f4050;
     font-size: 13px;
     color: #676a6c;
     overflow-x: hidden;
+    font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    padding-bottom: 100px;
+    background-color: rgba(74, 121, 147, 0.89);
+    background-image: radial-gradient(farthest-side ellipse at 10% 0, rgba(74, 121, 500, 0.89), rgba(204, 204, 500, 0.85) 80%, rgba(185, 135, 131, 0.87) 120%);
+    background-image: -webkit-radial-gradient(10% 0, farthest-side ellipse, rgba(74, 121, 147, 0.89), rgba(160, 200, 180, 0.85) 80%, rgba(185, 135, 131, 0.87) 120%);
+    background-image: -moz-radial-gradient(10% 0, farthest-side ellipse, rgba(74, 121, 147, 0.89), rgba(500, 204, 500, 0.85) 80%, rgba(185, 135, 131, 0.87) 120%);
+    background-attachment: fixed, fixed;
 }
 
 h1{
