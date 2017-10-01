@@ -12,7 +12,8 @@ var auth = firebase.auth();
 
 $(document).on("ready", function(){
    console.log("ready"); 
-   $("h4").hide();
+   $(".logo pull-left").hide();
+   $(".navbar").hide();
 });
 
 $(".register").on("click", function(){
@@ -36,6 +37,6 @@ $(".signin").on("click", function(){
          $(".emailbox").fadeOut("medium");
          $(".passwordbox").fadeOut("medium");
          $(".signin").fadeOut("medium");
-         $("h4").fadeIn("medium");
+         $(".navbar").fadeIn("medium");
     });
 });
