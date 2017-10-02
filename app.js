@@ -12,13 +12,24 @@ var auth = firebase.auth();
 
 $(document).on("ready", function(){
    console.log("ready"); 
-   $(".logo pull-left").hide();
    $(".navbar").hide();
+   $(".emailboxtwo").hide();
+   $(".passwordboxtwo").hide();
+   $(".signup").hide();
 });
 
 $(".register").on("click", function(){
     console.log("hit/clicked");
-    document.location = "https://preview.c9users.io/tydyethegreat/signup/index.html?_c9_id=livepreview0&_c9_host=https://ide.c9.io";
+    // Fade Out Sign In UI
+     $(".emailbox").fadeOut("medium");
+     $(".passwordbox").fadeOut("medium");
+     $(".signin").fadeOut("medium");
+     $(".register").fadeOut("medium");
+     $(".contactme").fadeOut("medium"); 
+    // Fade In Create Account UI
+     $(".emailboxtwo").fadeIn("medium");
+     $(".passwordboxtwo").fadeIn("medium");
+     $(".signup").fadeIn("medium");
 });
 
 $(".signin").on("click", function(){
@@ -37,6 +48,16 @@ $(".signin").on("click", function(){
          $(".emailbox").fadeOut("medium");
          $(".passwordbox").fadeOut("medium");
          $(".signin").fadeOut("medium");
-         $(".navbar").fadeIn("medium");
     });
+});
+
+$(".signup").on("click", function(){
+   console.log("m");
+   var email = document.getElementById("emailboxtwo").value;
+   var password = document.getElementById("passwordboxtwo").value;
+   console.log(email, password);
+    firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error){
+    }).then(function(user){
+        location.reload();
+   });
 });
