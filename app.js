@@ -12,25 +12,13 @@ var auth = firebase.auth();
 
 $(document).on("ready", function(){
    console.log("ready"); 
-   $(".navbar").hide();
    $(".emailboxtwo").hide();
    $(".passwordboxtwo").hide();
    $(".signup").hide();
+   $(".schedule").hide();
+   $(".request").hide();
 });
 
-$(".register").on("click", function(){
-    console.log("hit/clicked");
-    // Fade Out Sign In UI
-     $(".emailbox").fadeOut("medium");
-     $(".passwordbox").fadeOut("medium");
-     $(".signin").fadeOut("medium");
-     $(".register").fadeOut("medium");
-     $(".contactme").fadeOut("medium"); 
-    // Fade In Create Account UI
-     $(".emailboxtwo").fadeIn("medium");
-     $(".passwordboxtwo").fadeIn("medium");
-     $(".signup").fadeIn("medium");
-});
 
 $(".signin").on("click", function(){
     var email = document.getElementById("email").value;
@@ -40,17 +28,18 @@ $(".signin").on("click", function(){
          //console.log("error");
         // document.location = "https://preview.c9users.io/tydyethegreat/signup/index.html?_c9_id=livepreview0&_c9_host=https://ide.c9.io";
         alert("incorrect email/password");
-        setTimeout(5);
+        setTimeout(500)
         location.reload();
     }).then(function(user){
          console.log("next");
-         $("h1").fadeOut("medium");
          $("h3").fadeOut("medium");
          $("p").fadeOut("medium");
          $("p2").fadeOut("medium");
          $(".emailbox").fadeOut("medium");
          $(".passwordbox").fadeOut("medium");
          $(".signin").fadeOut("medium");
+         $(".schedule").fadeIn("high");
+         $(".request").fadeIn("high");
     });
 });
 
